@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --extra-webpack-config webpack.extra.js --plugin ~plugin.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
     "core-js": "^2.5.4",
+    "ngx-build-plus": "^7.3.2",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
   },
